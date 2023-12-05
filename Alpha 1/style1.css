@@ -1,0 +1,131 @@
+@media screen and (min-width:300px) and (max-width:600px) {
+    /* Debut HEADER */
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .hdroite2{
+        display: block;        
+    }
+    .tex{
+        display: block;
+    }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .hdroite2 img{
+        width: 6wv;
+        height: 4vh;
+        transition: 3s;
+    }
+    .hdroite{
+        display: none;
+    }
+    section{
+        display:block;
+    }
+    .hgauche img{
+        width: 10vw;
+        height: 7vh;
+    }
+    .hgauche p{
+       font-size: 10px;
+       font-weight: bold;
+    }
+    .tex {
+        width: 100%;
+        text-align: center;
+        margin-top: -10px;
+
+    }
+    .tex p{
+        font-size: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(23, 52, 148);
+        text-shadow: 1px 1px 1px rgb(231, 29, 181);
+
+    }
+    .menu2{
+        position: absolute;
+        left: 0;
+        margin-top: -5px;
+        background-image: radial-gradient(rgb(192, 180, 219),rgb(151, 79, 79));
+        opacity: 90%;
+        width: 30%;
+        height: 28%;
+        transition: 1s;
+        display: none;
+    }
+    .menu2 a{
+        color:white;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    .menu2 a:hover{
+        color:rgb(245, 241, 11);
+    }
+    .hdroite2 img:hover + .menu2{
+        transition: 3s;
+        display: block;
+        left: 75vw;
+        animation: menu2 0.5s ;
+    }
+    .hdroite2 .menu2:hover{
+        display: block;
+        left: 75vw;
+    }
+    @keyframes menu2 {
+        from{
+            left: 0;
+            opacity: 20%;
+        }
+        to{
+            left:75vw;
+            opacity: 20%;
+        }
+    }
+    /* Fin HEADER */
+    /*Debut SECTION */
+    .bus{
+        display: none;
+    }
+    .av{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .av1{
+        position: absolute;
+        margin-top: -10px;
+    }
+    .av1 p, .av1 h3{
+    color: ghostwhite; 
+    text-align: justify;
+   }
+    .av img{
+        width: 100vw;
+        height: 350px;
+    }
+    .ass{
+        width: 95%;
+        height: 23em;
+        display: flex;
+        justify-content: center;
+    }
+    .ass img{
+        height: calc(70px + 2vh) ;
+        width: 30%;
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    /*fin SECTION */
+
+
+}
